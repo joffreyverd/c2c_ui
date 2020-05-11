@@ -24,8 +24,8 @@
     </router-link>
 
     <div class="menu-footer is-size-7">
-      <!-- We must use JS to hide add, because we do not want that hidden add be taken add's stats -->
-      <advertisement class="menu-add" v-if="$screen.height>=630" />
+      <!-- We must use JS to hide ad, because we do not want that hidden ad be taken ad's stats -->
+      <advertisement class="menu-ad" v-if="$screen.height>=630" />
 
       <div class="has-text-centered menu-links">
         <router-link :to="{name:'article', params:{id:106727}}" v-translate>contact</router-link>
@@ -134,13 +134,13 @@
     bottom: 0;
 
     .menu-socials,
-    .menu-add,
+    .menu-ad,
     .menu-links {
       margin-bottom: 15px !important;
       line-height: 1;
     }
 
-    .menu-add {
+    .menu-ad {
       height: 320px;
       margin-left: calc((200px - 160px) / 2);
       margin-right: calc((200px - 160px) / 2);
@@ -170,7 +170,7 @@
   }
 
   // @media screen and (max-height: 645px){
-  //     .menu-add{
+  //     .menu-ad{
   //         display:none!important;
   //     }
   // }
