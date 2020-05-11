@@ -13,6 +13,7 @@
         <span v-if="!isDraftView" class="is-pulled-right button-bar no-print">
 
           <follow-button :document="document" />
+          <tags-button :document="document" />
 
           <social-network-sharing v-if="documentType!='profile' && isNormalView" />
 
@@ -62,6 +63,7 @@
 <script>
   import ImagesUploader from '@/components/images-uploader/ImagesUploader';
   import FollowButton from './FollowButton';
+  import TagsButton from './TagsButton';
   import SocialNetworkSharing from './SocialNetworkSharing';
   import DocumentVersionBanner from './DocumentVersionBanner';
 
@@ -72,6 +74,7 @@
     components: {
       ImagesUploader,
       FollowButton,
+      TagsButton,
       SocialNetworkSharing,
       DocumentVersionBanner
     },
@@ -119,25 +122,25 @@
     @import '@/assets/sass/variables.scss';
 
     .button-bar{
-        font-size:1.5rem;
+      font-size:1.5rem;
     }
 
     .button-bar > a{
-        color:$text;
+      color:$text;
     }
 
     .button-bar > span, .button-bar > a{
-        margin-left:0.25rem;
-        cursor:pointer;
+      margin-left:0.25rem;
+      cursor:pointer;
     }
     .button-bar > *:hover{
-        color:$black;
+      color:$black;
     }
 
     .title{
-        .outing-date{
-            margin-left:0.5rem;
-        }
+      .outing-date{
+        margin-left:0.5rem;
+      }
     }
 
     @media print {

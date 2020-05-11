@@ -2407,6 +2407,10 @@ msgctxt "months"
 msgid "mar"
 msgstr ""
 
+#: src/views/document/utils/TagsButton.vue
+msgid "Mark this route as to do"
+msgstr ""
+
 #: src/translations/fixed_strings_common_js.vue
 msgid "matress_unstaffed"
 msgstr ""
@@ -4130,6 +4134,10 @@ msgstr ""
 
 #: src/components/markdown-editor/MarkdownEditor.vue
 msgid "Unformatted text"
+msgstr ""
+
+#: src/views/document/utils/TagsButton.vue
+msgid "Unmark this route as to do"
 msgstr ""
 
 #: src/components/markdown-editor/MarkdownEditor.vue

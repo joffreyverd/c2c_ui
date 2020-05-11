@@ -8,6 +8,7 @@ import ModeratorService from './ModeratorService.js';
 import AssociationService from './AssociationService.js';
 import FeedService from './FeedService.js';
 import ForumService from './ForumService.js';
+import TagsService from './TagsService.js';
 
 function CamptocampApi() {
   // inherits properties
@@ -18,6 +19,7 @@ function CamptocampApi() {
   this.association = new AssociationService(this);
   this.feed = new FeedService(this);
   this.forum = new ForumService(this);
+  this.tags = new TagsService(this);
 
   for (const type of constants.documentTypes) {
     this[type] = new DocumentService(this, type);
