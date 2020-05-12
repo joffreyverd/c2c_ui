@@ -2567,6 +2567,10 @@ msgid "My account"
 msgstr ""
 
 #: src/views/Navigation.vue
+msgid "My bookmarks"
+msgstr ""
+
+#: src/views/Navigation.vue
 msgid "My changes"
 msgstr ""
 

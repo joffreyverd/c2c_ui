@@ -188,6 +188,11 @@
             to: { name: 'following' },
             text: this.$gettext('My followed users'),
             icon: 'heart'
+          },
+          {
+            to: { name: 'routes', query: { u: this.$user.id } },
+            text: this.$gettext('My bookmarks'),
+            icon: 'star'
           }
         ];
       }
